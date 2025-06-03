@@ -1,0 +1,50 @@
+{%extends 'admins/admin_base.html'%}
+{%block contents%}
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                {% comment %} <h2 class="section-title wow fadeInDown">Financial Datasets For Fraud Detection</h2> {% endcomment %}
+                <p class="wow fadeInDown">Smart surveillance : Detecting Anomalies in pedestrian pathways</p>
+            </div>
+
+        <h3 align="center" style="color:white;">View RegisterUser Details</h3></p><br>
+        <table class="table table-bordered bg-light text-dark">
+            <thead>
+            <tr style="color:White;font-weight:bold;">
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Login ID</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Locality</th>
+                <th>Status</th>
+                <th>Activate</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in data %}
+            <tr style="color:White;font-weight:bold;">
+                <td>{{forloop.counter}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.loginid}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.locality}}</td>
+                <td>{{i.status}}</td>
+                {% if i.status == 'waiting' %}
+                <td><a class="btn-link" href="/AdminActivaUsers/?uid={{ i.id }}"
+                       style="color:WHITE">Activate</a></td>
+                {% else %}
+                <td> Activated</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+   </p>
+        </div>
+    </section><!--/#pricing-->
+
+{%endblock%}
+

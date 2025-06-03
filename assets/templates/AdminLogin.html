@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+{%block contents%}
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                {% comment %} <h2 class="section-title wow fadeInDown">Financial Datasets For Fraud Detection</h2> {% endcomment %}
+                <p class="wow fadeInDown">Smart surveillance : Detecting Anomalies in pedestrian pathways</p>
+            </div>
+
+            <p>
+             <center>
+                    <h2 class="row justify-content-center text-dark"><i class="fa fa-sign-in-alt"
+                                                                        style="color: #B8C6CC; pointer-events: none;">&nbsp;Admin
+                        Log In</i></h2>
+                    <form action="{%url 'AdminLoginCheck'%}" method="post" novalidate>
+                        {%csrf_token%}
+
+                        <div id="div_id_username" class="form-group"><label for="id_username" class=" requiredField">
+                            Username<span class="asteriskField">*</span> </label>
+                            <div><input type="text" name="loginid" required autofocus autocapitalize="none"
+                                        autocomplete="username" maxlength="150" class="textinput textInput form-control"
+                                        required id="id_username"></div>
+                        </div>
+                        <div id="div_id_password" class="form-group"><label for="id_password" class=" requiredField">
+                            Password<span class="asteriskField">*</span> </label>
+                            <div><input type="password" name="pswd" required autocomplete="current-password"
+                                        class="textinput textInput form-control" required id="id_password"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark mb-2">Login</button>
+
+                    </form>
+                    {% if messages %}
+                    {% for message in messages %}
+                    <font color='RED'> {{ message }}</font>
+                    {% endfor %}
+                    {% endif %}
+                 </center>
+                           </p>
+        </div>
+    </section><!--/#pricing-->
+
+{%endblock%}

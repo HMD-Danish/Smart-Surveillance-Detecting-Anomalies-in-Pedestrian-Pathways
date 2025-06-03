@@ -1,0 +1,60 @@
+{%extends 'users/user_base.html'%}
+{%load static%}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+</style>
+{%block contents%}
+<section id="pricing">
+    <div class="container">
+        <div class="section-header">
+            {% comment %} <h2 class="section-title wow fadeInDown">Financial Datasets For Fraud Detection</h2> {% endcomment %}
+            <p class="wow fadeInDown">Deep Learning based Abnormal Event Detection
+in Pedestrian Pathways</p>
+        </div>
+        <center>
+            <h2>machine Learning Results</h2>
+            <p>
+            <table border="2px">
+                <tr style="color: White">
+                    <td>Random Forest</td>
+                    <td>{{rf|safe}}</td>
+                    <td>LGBMClassifiert</td>
+                    <td>{{lgbm|safe}}</td>
+                </tr>
+                <tr style="color: White">
+                    <td>XG Boost</td>
+                    <td>{{xgbr|safe}}</td>
+                    <td>Logistic Regression</td>
+                    <td>{{logreg|safe}}</td>
+                </tr>
+                <tr style="color: White">
+                    <td>Decision Tree</td>
+                    <td>{{dt|safe}}</td>
+                    <td>K Nearest Neighbor</td>
+                    <td>{{knn|safe}}</td>
+                </tr>
+                <tr style="color: White">
+                    <td>Support Vector Machine</td>
+                    <td>{{svm|safe}}</td>
+
+                </tr>
+            </table>
+
+            </p>
+        </center>
+    </div>
+</section><!--/#pricing-->
+
+{%endblock%}

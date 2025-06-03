@@ -1,0 +1,81 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Smart surveillance : Detecting Anomalies in pedestrian pathways</title>
+	<!-- core CSS -->
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/animate.min.css'%}" rel="stylesheet">
+    <link href="{%static 'css/prettyPhoto.css'%}" rel="stylesheet">
+    <link href="{%static 'css/styles.css'%}" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{%static 'css/slider-style.css'%}" />
+        <link rel="stylesheet" type="text/css" href="{%static 'css/slider-custom.css'%}" />
+		<script type="text/javascript" src="{%static 'js/modernizr.custom.79639.js'%}"></script>
+    <!--[if lt IE 9]>
+    <script src="{%static 'js/html5shiv.js'%}"></script>
+    <script src="{%static 'js/respond.min.js'%}"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{%static 'images/ico/favicon.ico'%}">
+</head>
+
+<body id="home">
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><h2>Smart surveillance : Detecting Anomalies</h2></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{%url 'index'%}">Home</a></li>
+                        <li><a href="{%url 'UserLogin'%}">Login</a></li>
+                        <li><a href="{%url 'AdminLogin'%}">Admin</a></li>
+                        <li><a href="{%url 'UserRegister'%}">Registrations</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+{%block contents%}
+{%endblock%}
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy;  <a target="_blank" href="#" title="Free Bootstrap Themes and HTML Templates"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="{%static 'js/jquery.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'js/mousescroll.js'%}"></script>
+    <script src="{%static 'js/smoothscroll.js'%}"></script>
+    <script src="{%static 'js/jquery.prettyPhoto.js'%}"></script>
+    <script src="{%static 'js/jquery.isotope.min.js'%}"></script>
+    <script src="{%static 'js/jquery.inview.min.js'%}"></script>
+    <script src="{%static 'js/wow.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/jquery.ba-cond.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/jquery.slitslider.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/slitslider-custom.js'%}"></script>
+    <script src="{%static 'js/custom-scripts.js'%}"></script>
+</body>
+</html>

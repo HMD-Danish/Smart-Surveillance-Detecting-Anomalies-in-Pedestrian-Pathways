@@ -1,0 +1,49 @@
+{%extends 'users/user_base.html'%}
+{%block contents%}
+<section id="pricing">
+    <div class="container">
+        <div class="section-header">
+            {% comment %} <h2 class="section-title wow fadeInDown">Financial Datasets For Fraud Detection</h2> {% endcomment %}
+            <p class="wow fadeInDown" style="font-size: 24px; font-weight: bold;">
+                Smart surveillance: Detecting Anomalies in pedestrian pathways
+            </p>
+            
+            <style>
+                body {
+                    background-color: black;
+                    color: white;
+                    font-family: Arial, sans-serif;
+                }
+                .container {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px; /* Space between text and image */
+                }
+                .text {
+                    flex: 1;
+                }
+                .image img {
+                    width: 450px; /* Adjust size as needed */
+                    border-radius: 10px; /* Optional styling */
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="container">
+                <div class="text">
+                    <h1 style="font-size: 30px;">
+                        The UCSD Anomaly Detection Dataset was acquired with a stationary camera mounted at an elevation, overlooking pedestrian walkways. The crowd density in the walkways was variable, ranging from sparse to very crowded. In the normal setting, the video contains only pedestrians. Abnormal events are due to either:
+
+                        the circulation of non pedestrian entities in the walkways
+                    </h1>
+                  
+                </div>
+        
+                <div class="image">
+                    <img src="https://www.mdpi.com/electronics/electronics-11-03105/article_deploy/html/images/electronics-11-03105-g001-550.jpg" alt="Detection">
+                </div>
+    </div>
+</section><!--/#pricing-->
+
+{%endblock%}

@@ -1,0 +1,36 @@
+{%extends 'users/user_base.html'%}
+{%load static%}
+{%block contents%}
+<section id="pricing">
+    <div class="container">
+        <div class="section-header">
+            {% comment %} <h2 class="section-title wow fadeInDown">Financial Datasets For Fraud Detection</h2> {% endcomment %}
+            <p class="wow fadeInDown">Deep Learning based Abnormal Event Detection
+in Pedestrian Pathways</p>
+        </div>
+
+        <p>
+           <table>
+        <tr>
+            <td><img src="{%static 'eda/bragraph.jpg'%}" alt="" width="1200" height="600"></td>
+        </tr>
+        <tr>
+            <td><img src="{%static 'eda/isfraud.jpg'%}" alt="" width="1200" height="600"></td>
+        </tr>
+        <tr>
+            <td><img src="{%static 'eda/transactions.jpg'%}" alt="" width="1200" height="600"></td>
+        </tr>
+        <tr>
+            <td><img src="{%static 'eda/type1type2.jpg'%}" alt="" width="1200" height="600"></td>
+        </tr>
+        <tr>
+            <td><img src="{%static 'eda/pitransaction.jpg'%}" alt="" width="1200" height="600"></td>
+        </tr>
+
+    </table>
+        </p>
+
+    </div>
+</section><!--/#pricing-->
+
+{%endblock%}
