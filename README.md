@@ -65,17 +65,17 @@ bash
 Copy
 Edit
 ├── users/
-│   └── views.py         # User registration, login, prediction logic
+│   └── views.py        
 ├── admins/
-│   └── views.py         # Admin dashboard, user management
+│   └── views.py      
 ├── templates/
 │   └── HTML templates for UI
 ├── static/
 │   └── CSS/JS files
 ├── fuelconsumption/
-│   └── urls.py          # Django URL routing
+│   └── urls.py         
 ├── utility/
-│   └── process_ml.py    # ML model integration
+│   └── process_ml.py  
 └── manage.py
 📈 Future Enhancements
 Integrate real-time video feed processing
